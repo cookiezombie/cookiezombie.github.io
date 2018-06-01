@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.40.3" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>Useful Linux Command Line Commands &middot; Tech and Things</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="/cookiezombie.github.io/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="/cookiezombie.github.io/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="/cookiezombie.github.io/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="/cookiezombie.github.io/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Tech and Things" />
+
+  
+</head>
+
+  <body class=" ">
+  <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="/cookiezombie.github.io/"><h1>Tech and Things</h1></a>
+      <p class="lead">
+      A Blog<br> <a href="https://twitter.com/jeffthomasweb/">Twitter</a>
+      </p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li><a href="/cookiezombie.github.io/">Home</a> </li>
+      
+    </ul>
+
+    <p>&copy; 2018. All rights reserved. </p>
+  </div>
+</div>
+
+    <div class="content container">
+    <div class="post">
+  <h1>Useful Linux Command Line Commands</h1>
+  <span class="post-date">Fri, Jun 1, 2018</span>
+  
+
+<p>Learning how to use the command line can open up a whole new world. Even knowing a few basic commands can allow you to perform useful tasks. Plus, all your friends will be impressed with your new &ldquo;hacker&rdquo; skills!</p>
+
+<p>When we open up a terminal session we see something like:</p>
+
+<blockquote>
+<p><strong><code>jeff@localhost:~$</code></strong></p>
+</blockquote>
+
+<p><code>jeff@localhost:~$</code> is called a shell prompt and lists your username (jeff) and the name of your Linux machine (mine is named localhost). The shell prompt is the first thing we see whenever we open up the terminal. We start typing our commands at the end of the shell prompt after the $ symbol.</p>
+
+<h2 id="print-working-directory"><strong>Print working directory</strong></h2>
+
+<h3 id="pwd"><strong><code>pwd</code></strong></h3>
+
+<p>Typing <strong><code>pwd</code></strong> into the terminal returns your current working directory. In my case it returns <strong><code>/home/jeff</code></strong></p>
+
+<blockquote>
+<p><strong><code>jeff@localhost:~$ pwd</code></strong></p>
+
+<p><strong><code>/home/jeff</code></strong></p>
+</blockquote>
+
+<p>This is like the &ldquo;you are here&rdquo; symbol on a map. It returns your current location on your Linux system. Most people are familiar with the graphical program file managers with it&rsquo;s icons/pictures of folders that open up more folders/files upon clicking them. A directory is similar to what a folder is in the graphical program file managers. The location returned by typing pwd is known as the current working directory. A current working directory lists all the folders that are open. Here the current working directory is <code>/home/jeff</code>. It&rsquo;s helpful to know your current working directory just like it&rsquo;s good to know where your position is on a map. You can use your current working directory to help you move to another directory or perform another activity like saving a file to the correct location.</p>
+
+<h2 id="change-directory"><strong>Change directory</strong></h2>
+
+<h3 id="cd"><strong><code>cd</code></strong></h3>
+
+<p>Changes your location in Linux. This will open another directory, similar to double-clicking on a folder in a graphical program file manager. If your current working directory is /home/jeff and you would like to change to /home/jeff/Documents, typing: <strong><code>cd /home/jeff/Documents</code></strong> will open the Documents folder. A faster way to accomplish this is to type <strong><code>cd Documents</code></strong> Here&rsquo;s an example:</p>
+
+<blockquote>
+<p><strong><code>jeff@localhost:~$ pwd</code></strong> &nbsp; &nbsp; &nbsp; (Type pwd to get your current working directory)</p>
+
+<p><strong><code>/home/jeff</code></strong> &nbsp; &nbsp; &nbsp; (Linux returns your current working directory)</p>
+
+<p><strong><code>jeff@localhost:~$ cd Documents</code></strong> &nbsp; &nbsp; &nbsp; (Type cd Documents to change your location)</p>
+
+<p><strong><code>jeff@localhost:~/Documents$</code></strong> &nbsp; &nbsp; (The shell prompt is updated with your new location, the Documents directory)</p>
+</blockquote>
+
+<p>Linux returns your new location with a ~ symbol to abbreviate the entire path/location before Documents.</p>
+
+<h2 id="list-files-folders"><strong>List files/folders</strong></h2>
+
+<h3 id="ls"><strong><code>ls</code></strong></h3>
+
+<p>This is like looking at a map and wondering what&rsquo;s inside a location. The <strong><code>ls</code></strong> command will list the files and directories inside the current working directory. We can use this information to <strong><code>cd</code></strong> (change) to another directory. Here&rsquo;s an example:</p>
+
+<blockquote>
+<p><strong><code>jeff@localhost:~/Documents$ ls</code></strong> (Type ls to see the files/folders inside Documents)</p>
+
+<p><strong><code>word_docs</code></strong> <strong><code>text_files</code></strong> (Linux returns the names of two folders inside Documents)</p>
+
+<p><strong><code>jeff@localhost:~/Documents$ cd word_docs</code></strong> (Type cd word_docs to change directory)</p>
+
+<p><strong><code>jeff@localhost:~/word_docs$</code></strong> (Linux shell prompt updates with your new current working directory)</p>
+</blockquote>
+
+<h2 id="shortcut-to-change-to-your-home-user-directory"><strong>Shortcut to change to your <code>/home/user</code> directory</strong></h2>
+
+<h3 id="cd-1"><strong><code>cd</code></strong></h3>
+
+<p>When the terminal first opens, we see this:</p>
+
+<blockquote>
+<p><strong><code>jeff@localhost:~$</code></strong></p>
+</blockquote>
+
+<p>The default current working directory when we first start the terminal is <strong><code>/home/user</code></strong>. Since my user name is jeff, mine would be /home/jeff. If I start the terminal and change my current directory /home/jeff/Documents/word_docs, I can change back to /home/jeff by typing <strong><code>cd /home/jeff</code></strong>. A shortcut to do this would be to simply enter <strong><code>cd</code></strong>.</p>
+
+<blockquote>
+<p><strong><code>jeff@localhost:~/word_docs$ cd</code></strong> (Type cd to change to /home/user directory)
+<strong><code>jeff@localhost:~$</code></strong> (Linux returns to the /home/user directory)</p>
+</blockquote>
+
+<h2 id="change-to-the-upstream-directory"><strong>Change to the upstream directory</strong></h2>
+
+<h3 id="cd-2"><strong><code>cd ..</code></strong></h3>
+
+<p>If you are at <strong><code>/home/jeff/Documents/word_docs</code></strong></p>
+
+<p><strong><code>cd ..</code></strong> will change you to <strong><code>/home/Jeff/Documents</code></strong></p>
+
+<blockquote>
+<p><strong><code>jeff@localhost:~/word_docs$ cd ..</code></strong> (Type &ldquo;cd ..&rdquo;. Use a space after the cd. No spaces between the periods.)</p>
+
+<p><strong><code>jeff@localhost:~/Documents$</code></strong> (Back to the Documents directory)</p>
+</blockquote>
+
+<h2 id="delete-a-file"><strong>Delete a file</strong></h2>
+
+<h3 id="rm-rf-filename"><strong><code>rm -rf filename</code></strong></h3>
+
+<p>You must be in the directory of the directory/file you wish to delete or you can type the full path.</p>
+
+<blockquote>
+<p><strong><code>jeff@localhost:~/Documents$ ls</code></strong> (Type ls to see the directories/files inside Documents)</p>
+
+<p><strong><code>word_docs</code></strong> <strong><code>text_files</code></strong> (Two directories inside)</p>
+
+<p><strong><code>jeff@localhost:~/Documents$ rm -rf word_docs</code></strong> (Delete the directory named word_docs)</p>
+
+<p><strong><code>jeff@localhost:~/Documents$ ls</code></strong> (Type ls to see if the directory was sucessfully deleted)</p>
+
+<p><strong><code>text_files</code></strong> (word_docs was deleted since text_files is the only directory to display.)</p>
+</blockquote>
+
+</div>
+
+
+    </div>
+
+    
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Tech and Things</title>
+    <link>/cookiezombie.github.io/posts/</link>
+    <description>Recent content in Posts on Tech and Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Jun 2018 06:03:04 -0700</lastBuildDate>
+    
+	<atom:link href="/cookiezombie.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Useful Linux Command Line Commands</title>
+      <link>/cookiezombie.github.io/posts/commandline/</link>
+      <pubDate>Fri, 01 Jun 2018 06:03:04 -0700</pubDate>
+      
+      <guid>/cookiezombie.github.io/posts/commandline/</guid>
+      <description>Learning how to use the command line can open up a whole new world. Even knowing a few basic commands can allow you to perform useful tasks. Plus, all your friends will be impressed with your new &amp;ldquo;hacker&amp;rdquo; skills!
+When we open up a terminal session we see something like:
+ jeff@localhost:~$
+ jeff@localhost:~$ is called a shell prompt and lists your username (jeff) and the name of your Linux machine (mine is named localhost).</description>
+    </item>
+    
+  </channel>
+</rss>
